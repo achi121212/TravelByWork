@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>打工換宿趣-店家資料</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<!-- storeInfo 可update-->
+		<article id="storeInfo">
+	        <form id="storeInfoForm" method="post">    
+	        </form>
+        </article> 
+                    
+		<!-- getStoreJob -->
+		<article id="getStoreJob">
+           <header>
+               <h2>我的職缺</h2>
+           </header>
+				<table>
+					<thead>
+						<tr>
+						    <th>我的職缺編號</th>
+						    <th>職缺日期</th>
+						    <th>工作地區</th>
+						    <th>被收藏數量</th> 
+						</tr>
+				</thead>
+				<tbody id="myjobtable">
+				</tbody> 
+           </table>
+      	</article>
+
+        <!-- scripts -->
+        <script src="js/storeUpdate.js"></script>  <!-- 修改store資料 -->          
+		<script src="js/getStoreJob.js"></script> <!-- 查看該店家發布的工作 -->
+	</body>
+</html>

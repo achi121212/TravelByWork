@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>打工換宿趣-小幫手登入</title>
+    <meta charset="utf-8" />
+    <!--google login-->	
+	<script src="https://accounts.google.com/gsi/client" async></script>
+</head>
+<body>
+       
+        <!-- google login -->
+	    <div id="g_id_onload"
+		     data-client_id="my-google-client-id"
+		     data-context="signin"
+		     data-ux_mode="popup"
+		     data-callback="onSignIn"
+		     data-nonce=""
+		     data-auto_prompt="false">
+		</div>	
+		<!-- google login圖案樣式 -->
+		<div class="g_id_signin"
+		     data-type="standard"
+		     data-shape="pill"
+		     data-theme="outline"
+		     data-text="signin_with"
+		     data-size="medium"
+		     data-logo_alignment="left">
+		</div>
+        
+    <script src="js/helperGoogleLogin.js"></script>
+</body>
+</html>

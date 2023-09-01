@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>打工換宿趣-小幫手資料</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<nav id="nav">
+			<a href="#home"><span>個人資料</span></a>
+			<a href="#work"><span>履歷</span></a>
+			<a href="#FavoriteJob"><span>已收藏店家</span></a>
+		</nav>
+
+		<!-- helperInfo -->
+		<article id="home">
+			<header>
+				<h1>基本資料</h1>
+				<img id="myphoto" alt="請上傳大頭貼" style="max-width: 100%; max-height: 100%;"/>
+			</header>
+			<form id="userForm" action="#" method="post">
+			</form>
+		</article>					
+
+		<!-- Work -->
+		<article id="work" >
+			<header>
+				<h2>履歷</h2>
+			</header>
+			<div>
+				<input type="text" id="helperphoto" name="helperphoto" placeholder="上傳大頭貼" />					
+				<input type="text" id="helpercvlink" name="helpercvlink" placeholder="上傳履歷" />	
+			</div>
+		</article>
+
+		<!-- FavoriteJob -->
+		<article id="FavoriteJob">
+			<header>
+				<h2>收藏工作</h2>
+			</header>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>已收藏店家</th>
+						<th>開始日期</th>
+						<th>結束日期</th>
+						<th>收藏人數</th>
+						<th>取消收藏</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tbody id="helperjob"></tbody>
+				</tbody>
+			</table>
+		</article>
+								
+		
+		<!-- Scripts -->
+		<script src="js/helpercv.js"></script>
+		<script src="js/getHelperJob.js"></script>
+	</body>
+</html>
